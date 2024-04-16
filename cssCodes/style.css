@@ -1,0 +1,779 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/cardano-blockchain.jpeg);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 1px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 15px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 100px;
+}
+
+nav ul li {
+  margin: 10px;
+  padding: 10px;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li:nth-child(5) {
+  background-color: rgb(150, 127, 69);
+  border-radius: 5px;
+}
+
+.heading {
+  width: 40%;
+  margin: 100px auto auto 100px;
+  padding: 5px;
+}
+
+.heading h1 {
+  margin: 100px auto 0px;
+  width: fit-content;
+  font-size: 3.5rem;
+  word-spacing: 1.5rem;
+  text-transform: capitalize;
+}
+
+.heading p {
+  margin: 30px auto;
+  color: rgb(90, 90, 90);
+  font-size: large;
+  padding: 10px 0px;
+}
+
+.input-flex {
+  width: 80%;
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.input-flex input[type="email"] {
+  background-color: transparent;
+  width: 40%;
+  border: 1px solid rgb(90, 90, 90);
+  display: block;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+}
+
+.input-flex input[type="button"] {
+  background-color: rgb(90, 90, 90);
+  border: none;
+  display: block;
+  margin: 10px 0px 10px 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: aliceblue;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.section-two {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 0px;
+}
+
+.section-two > div {
+  width: 45%;
+  height: 400px;
+}
+
+.section-two div > img {
+  width: 40%;
+}
+
+.one {
+  position: relative;
+}
+
+.one > img {
+  border-radius: 20px;
+  position: absolute;
+}
+
+.one img:nth-child(1) {
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.one img:nth-child(2) {
+  width: 70%;
+  top: 0;
+  right: 100px;
+}
+
+.one img:nth-child(3) {
+  top: 100px;
+  left: 10px;
+}
+
+.one img:nth-child(4) {
+  top: 200px;
+  right: 10px;
+}
+
+.inside {
+  width: 80%;
+  margin: 30px 0px;
+}
+
+.two h2 {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.two p {
+  margin: 30px auto;
+  color: rgb(90, 90, 90);
+  font-size: large;
+  padding: 10px 0px;
+}
+
+.two a {
+  background-color: rgb(90, 90, 90);
+  display: block;
+  padding: 10px;
+  color: aliceblue;
+  border-radius: 5px;
+  text-transform: capitalize;
+  width: fit-content;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.section-three {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 0px;
+}
+
+.section-three > div {
+  width: 40%;
+  height: 470px;
+  padding: 15px;
+}
+
+.second-div {
+  position: relative;
+}
+
+.second-div img {
+  width: 50%;
+  height: 400px;
+  position: absolute;
+  border-radius: 20px;
+}
+
+.second-div img:nth-child(1) {
+  top: 10px;
+  left: 100px;
+  z-index: 1;
+}
+
+.second-div img:nth-child(2) {
+  top: 50px;
+  left: 200px;
+}
+
+.frist-div > h3 {
+  margin: 30px 0px;
+  font-size: 2rem;
+}
+
+.f-in {
+  margin: 15px 0px;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+}
+
+.f-in > span {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.f-in span h3 {
+  font-size: medium;
+  text-transform: capitalize;
+}
+
+.f-in p {
+  color: rgb(90, 90, 90);
+  margin: 10px 0px;
+}
+
+.fa-user,
+.fa-clock,
+.fa-unlock-keyhole,
+.fa-link,
+.fa-briefcase {
+  font-size: 1.3rem;
+  margin: 10px 10px 10px 0px;
+}
+
+.section-four {
+  width: 100%;
+  height: 80vh;
+}
+
+.section-four > h3 {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 2rem;
+  width: 30%;
+}
+
+.section-four > p {
+  text-align: center;
+  color: rgb(90, 90, 90);
+}
+
+.sf-flex {
+  width: 80%;
+  margin: 100px auto 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sf-flex > div {
+  width: 300px;
+  background-color: rgb(6, 6, 26);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.sf-flex > div span {
+  display: flex;
+  align-items: center;
+}
+
+.fa-shield-virus {
+  margin: 10px 10px 10px 0px;
+  font-size: 1.1rem;
+}
+
+.sf-flex > div h4 {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin: 10px 0px;
+}
+
+.sf-flex > div p {
+  font-size: small;
+  line-height: 1.5rem;
+  color: rgb(90, 90, 90);
+}
+
+.sf-flex > div a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+  margin: 10px 0px;
+}
+
+.sf-flex > div a:hover {
+  text-decoration: underline;
+}
+
+.section-five {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.section-five > h3 {
+  margin: 30px 0px;
+  font-size: 2rem;
+  width: 25%;
+}
+
+.section-five > p {
+  color: rgb(90, 90, 90);
+  margin: 10px 0px;
+}
+
+.sfi-div {
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.in-div {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  width: 250px;
+  background-color: rgb(6, 6, 26);
+  border-radius: 20px;
+}
+
+.arrow {
+  width: 100px;
+  text-align: center;
+}
+
+.section-six {
+  width: 100%;
+  height: 80vh;
+  margin-top: 200px;
+}
+
+.inner-ss {
+  width: 60%;
+  background-color: rgb(6, 6, 26);
+  margin: 100px auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  align-items: center;
+}
+
+.inner-ss > div {
+  width: 40%;
+  margin: 50px 0px;
+}
+
+.first-ss h2 {
+  font-size: 2.5rem;
+}
+
+.second-ss p {
+  color: rgb(90, 90, 90);
+  font-size: small;
+  margin: 30px 0px;
+}
+
+.second-ss a {
+  color: white;
+  text-decoration: none;
+  font-size: medium;
+  display: block;
+  background-color: rgb(38, 38, 122);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+}
+
+.f-logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 15px;
+}
+
+.f-list,
+.f-icons {
+  width: 30%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.f-list a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.fa-twitter,
+.fa-envelope,
+.fa-github {
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: rgb(38, 38, 122);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#myIcon {
+  display: none;
+}
+
+.media-nav {
+  display: none;
+}
+
+@media (max-width: 1120px) {
+  .f-list a {
+    font-size: 1.1rem;
+  }
+
+  .f-list,
+  .f-icons {
+    width: 40%;
+  }
+
+  .section-five > h3 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 990px) {
+  .heading {
+    width: 60%;
+  }
+
+  .section-two > div {
+    width: 80%;
+    margin: auto;
+    height: 400px;
+  }
+
+  .one img:nth-child(1) {
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    display: none;
+  }
+
+  .one img:nth-child(2) {
+    width: 100%;
+    top: 20px;
+    right: 70px;
+  }
+
+  .one img:nth-child(3) {
+    top: 100px;
+    left: 6px;
+    display: none;
+  }
+
+  .one img:nth-child(4) {
+    top: 150px;
+    right: 10px;
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .sf-flex {
+    width: 80%;
+    flex-direction: column;
+  }
+  .sf-flex > div {
+    width: 80%;
+    margin: 30px;
+  }
+
+  .section-four {
+    width: 100%;
+    height: auto;
+  }
+
+  .in-div {
+    width: 80%;
+    margin: 15px;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+  }
+
+  .sfi-div {
+    flex-direction: column;
+  }
+
+  .inner-ss {
+    width: 80%;
+  }
+
+  .section-three > div {
+    width: 80%;
+    height: 660px;
+  }
+
+  .section-three {
+    flex-direction: column;
+  }
+
+  .second-div img {
+    width: 50%;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+
+  nav ul {
+    margin-right: 60px;
+  }
+
+  nav ul li {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .section-four > h3 {
+    margin: 30px auto;
+    font-size: 1.3rem;
+    width: 50%;
+  }
+
+  .frist-div > h3 {
+    font-size: 1.3rem;
+  }
+
+  .first-ss h2 {
+    font-size: 1.5rem;
+  }
+
+  .f-list,
+  .f-icons {
+    width: 80%;
+  }
+}
+
+@media (max-width: 622px) {
+  #myIcon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .media-nav {
+    width: 50%;
+    background-color: goldenrod;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-500px);
+    transition: all 2s;
+    z-index: 100;
+  }
+
+  .mn-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .click {
+    position: fixed;
+    z-index: 100px;
+    width: 100%;
+    top: 10px;
+    left: 10px;
+    display: block;
+    transition: all 1s;
+  }
+
+  .media-nav .logo {
+    float: right;
+    margin: 15px;
+  }
+
+  .media-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  .media-nav ul li {
+    font-size: 1.5rem;
+    margin: 30px;
+    text-transform: capitalize;
+  }
+
+  .media-nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .f-list a {
+    font-size: small;
+  }
+
+  .fa-twitter,
+  .fa-envelope,
+  .fa-github {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .two h2 {
+    font-size: 1.5rem;
+  }
+
+  .two p {
+    font-size: medium;
+  }
+
+  .second-div img:nth-child(1) {
+    top: 10px;
+    left: 50px;
+    z-index: 1;
+  }
+
+  .second-div img:nth-child(2) {
+    top: 50px;
+    left: 100px;
+  }
+
+  .section-five > h3 {
+    width: 80%;
+  }
+
+  .heading {
+    width: 80%;
+    margin: 100px auto auto auto;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  header {
+    height: fit-content;
+  }
+
+  .input-flex {
+    width: 100%;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .input-flex input[type="email"] {
+    width: fit-content;
+  }
+
+  .section-two {
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+
+  nav ul {
+    margin-right: 60px;
+  }
+
+  nav ul li {
+    font-size: 1rem;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 321px) {
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: medium;
+  }
+
+  .section-three > div {
+    height: 700px;
+  }
+
+  .inner-ss {
+    width: 90%;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .inner-ss > div {
+    width: 50%;
+    margin: 50px 0px;
+  }
+
+  .section-three > div {
+    width: 90%;
+    margin-top: 10px;
+    height: 700px;
+  }
+
+  .second-ss a {
+    font-size: small;
+    padding: 10px;
+  }
+}
